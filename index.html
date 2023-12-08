@@ -1,28 +1,29 @@
 <script src="j.js"></script>
 <input type="number" placeholder="n" id="n" min="1" max="170" step="1" required>
+<label><input type="radio" name="d" id="d" checked value="ko">комбинаторика</label>
 <div></div>
 <input type="number" placeholder="k" id="k" min="1" max="170" step="1" required>
+<label><input type="radio" name="d" id="d" value="m"> метод шаров и перегородок</label>
+
 <div></div>
-<label>
-<input type="radio" name='b' value="P" checked>
-Перестановка(P)
-</label>
+
+<div hidden id="kom">
+<label value="PA"><input type="radio" name='b' value="P" checked>Перестановка(P)</label>
 <div></div>
-<label>
-<input type="radio" name='b' value="A"/>
-Размещение(A)
-</label>
+<label value="AA"><input type="radio" name='b' value="A"/>Размещение(A)</label>
 <div></div>
-<label>
-<input type="radio" name='b' value="C"/>
-Сочетание(C)
-</label>
+<label value="CA"><input type="radio" name='b' value="C"/>Сочетание(C)</label>
+</div>
+<div hidden id="e">
+<label><input type="radio" name='c' checked value="e1"/>хотя бы 1 шар</label>
+<div></div>
+<label ><input type="radio" name='c' value="e2"/>может быть и 0</label>
+<div></div>
+<label><input type="radio" name="c" value="e3">замыкается</label>
+</div>
 <div></div>
 <button id="bu">посчитать</button>
 <div></div>
-<input placeholder="результат" id="e" disabled>
-<div></div>
-<div></div>
-<div></div>
+<input placeholder="результат" id="eee" disabled>
 <div></div>
 Сделал Кирилл Г.
